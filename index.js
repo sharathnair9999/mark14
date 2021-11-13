@@ -5,18 +5,18 @@ var submitBtn = document.querySelector('#submit-btn')
 var outputBox = document.querySelector('#output-box')
 submitBtn.addEventListener("click", submitValues)
 
-function validateFields(i,q,c){
-  if(i ===null||q===null||c===null){
-    alert("input all please!")
-  }
-  return;
-}
+// function validateFields(i,q,c){
+//   if(i ===null||q===null||c===null){
+//     alert("input all please!")
+//   }
+//   return;
+// }
 
 function submitValues(){
   var ip = Number(initialValue.value)
   var qty = Number(quantity.value)
   var curr = Number(currentValue.value)
-  validateFields(ip,qty,curr)
+//   validateFields(ip,qty,curr)
   calculateProfitAndLoss(ip,qty,curr)
 }
 
